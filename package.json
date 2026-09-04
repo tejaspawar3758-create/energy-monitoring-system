@@ -4,11 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node ./node_modules/vite/bin/vite.js --port=3000 --host=0.0.0.0",
-    "build": "node ./node_modules/vite/bin/vite.js build",
-    "preview": "node ./node_modules/vite/bin/vite.js preview",
-    "deploy": "node ./node_modules/vite/bin/vite.js build && npx wrangler deploy",
-    "clean": "rm -rf dist server.js",
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
@@ -24,8 +23,7 @@
     "react": "^19.0.1",
     "react-dom": "^19.0.1",
     "recharts": "^3.10.1",
-    "@neondatabase/serverless": "^1.0.1",
-    "vite": "^6.2.3"
+    "@neondatabase/serverless": "^1.0.1"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
